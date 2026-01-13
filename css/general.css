@@ -198,6 +198,7 @@ h3 {
   transition: transform 250ms;
   text-decoration: none;
   color: var(--color-text-primary);
+  display: inline-block;
 }
 
 .cta-beige {
@@ -210,6 +211,7 @@ h3 {
   transition: transform 250ms;
   text-decoration: none;
   color: var(--color-text-primary);
+  display: inline-block;
 }
 
 .cta-beige:hover {
