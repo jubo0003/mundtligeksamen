@@ -1,0 +1,33 @@
+.flexhero {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  gap: 2em;
+}
+
+.herotext {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-bottom: 3em;
+}
+
+.h3-p-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex-text-cta1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 3em;
+}
+
+.flex-text-cta2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 3em;
+}

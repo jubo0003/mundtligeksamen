@@ -1,0 +1,108 @@
+.h1-p-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 2.5em 3em;
+  justify-content: center;
+}
+
+.h1-p-flex {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2em;
+
+  h1 {
+    font-weight: 500;
+  }
+  p {
+    max-width: 40ch;
+  }
+}
+
+.cardbox {
+  text-align: center;
+  background-color: var(--color-bg-secondary);
+  width: 18em;
+  height: 22em;
+  padding: 3em;
+  gap: 2em;
+}
+
+.lightbulb {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1.5em;
+  svg {
+    max-height: 4em;
+  }
+}
+
+.parentes {
+  font-size: 0.8em;
+}
+
+.dots {
+  width: 1.5em;
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 2em 4em;
+}
+
+.flex-erfaring {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.grid-erfaring {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 1em;
+  max-width: 600px;
+}
+
+.flex-jobs {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+.grid-erfaring {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 1em;
+  max-width: 600px;
+}
+
+@media screen and (width>600px) {
+  .job1 {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+  }
+
+  .job2 {
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+  }
+
+  .job3 {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+  }
+
+  .job4 {
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+  }
+}

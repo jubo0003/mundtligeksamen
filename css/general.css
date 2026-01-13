@@ -1,0 +1,273 @@
+/* 1. reset starter */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* reset slutter */
+
+:root {
+  --color-bg-primary: #f0efec;
+  --color-bg-secondary: #d6dbc9;
+  --color-bg-footer: black;
+
+  --color-beige-hover: #d6d9f4;
+  --color-green-hover: #eeefea;
+
+  --color-text-primary: #000000;
+  --color-text-secondary: #bb4926;
+  --color-text-tertiary: #f0efec;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+}
+
+.hedvig-letters-serif {
+  font-family: "Hedvig Letters Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hedvig-letters-sans-regular {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  color: var(--color-text-primary);
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+/* header styling */
+
+.logo {
+  width: 40px;
+  margin-top: 0.6em;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.flexheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 2.5em;
+  background-color: var(--color-bg-primary);
+}
+
+.flexnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3em;
+  padding-top: 0.3em;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 1.1em;
+
+    &:visited {
+      color: var(--color-text-primary);
+    }
+  }
+}
+
+.bg-change {
+  background-color: var(--color-bg-secondary);
+}
+
+/* text styling */
+
+p {
+  max-width: 65ch;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+@media (width>800px) {
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* cta styling */
+
+.cta-green {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--color-bg-secondary);
+  border-radius: 0;
+  border: 1.7px solid black;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 250ms;
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.cta-beige {
+  padding: 0.7rem 2.7rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 0;
+  border: 1.7px solid black;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 250ms;
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.cta-beige:hover {
+  transform: scale(1.05);
+}
+
+.cta-green:hover {
+  transform: scale(1.05);
+}
+
+/* footer styling */
+
+footer {
+  background-color: var(--color-bg-footer);
+  color: var(--color-text-tertiary);
+  padding: 2em;
+  font-family: "Hedvig Letters Sans", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-tertiary);
+
+    &:visited {
+      color: var(--color-text-tertiary);
+    }
+  }
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+/* styling used on multiple pages */
+
+.cta-nav {
+  border: 1.5px solid black;
+  padding: 0.5em 1.2em;
+  transition: 0.5s;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:visited {
+    color: var(--color-text-primary);
+  }
+}
+
+.udd {
+  font-size: 1.6em;
+}
+
+p {
+  text-wrap: pretty;
+}
